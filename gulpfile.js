@@ -17,7 +17,7 @@ process.stderr.write = function (chunk, ...args) {
 
 const { src, dest, watch, task, series } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
-var browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync').create();
 const postcss = require('gulp-postcss')
 const cssnano = require('cssnano')
 const rename = require('gulp-rename')
